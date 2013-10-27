@@ -4,22 +4,22 @@
 <context>
     <name>LoginDialog</name>
     <message>
-        <location filename="../assets/LoginDialog.qml" line="39"/>
+        <location filename="../assets/LoginDialog.qml" line="54"/>
         <source>Email Address or Username</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/LoginDialog.qml" line="68"/>
+        <location filename="../assets/LoginDialog.qml" line="83"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/LoginDialog.qml" line="80"/>
+        <location filename="../assets/LoginDialog.qml" line="95"/>
         <source>Forgot Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/LoginDialog.qml" line="97"/>
+        <location filename="../assets/LoginDialog.qml" line="112"/>
         <source>Login</source>
         <translation type="unfinished"></translation>
     </message>
@@ -27,7 +27,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../assets/main.qml" line="52"/>
+        <location filename="../assets/main.qml" line="67"/>
         <source>  Login</source>
         <translation type="unfinished"></translation>
     </message>
