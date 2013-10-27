@@ -5,9 +5,16 @@
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+
+/.settings/
+/arm/
+/x86/
+/config.pri
+/.device
+*.qm
+/assets/.assets.index
