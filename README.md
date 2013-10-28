@@ -19,4 +19,7 @@ cascades_eula
  * http://ekkes-corner.org
  * http://ekkes-apps.org
  * 
+ * here's the blog explaining the sources:
+ * http://appbus.wordpress.com/2013/10/29/conference-app-secrets-2-custom-credentials-dialog/ 
+ * 
  */

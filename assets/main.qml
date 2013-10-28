@@ -14,6 +14,7 @@
  */
 
 import bb.cascades 1.0
+import bb.system 1.0
 
 Page {
     id: rootPage
@@ -33,10 +34,6 @@ Page {
                     return
                 }
                 if (myLoginDialog.result == "FORGOT") {
-                    if (myLoginDialog.usernameEntry.length == 0) {
-                        noEmailDialog.show()
-                        return;
-                    }
                     console.log("FORGOT PASSWORD");
                     app.forgotPassword(myLoginDialog.usernameEntry)
                     myLoginDialog.passwordEntry = ""
@@ -46,6 +43,10 @@ Page {
                 myLoginDialog.usernameEntry = ""
                 myLoginDialog.passwordEntry = ""
             }
+        },
+        SystemToast {
+            id: mailSentToast
+            body: "Mail send to request a new Password."
         }
     ]
     Container {
@@ -88,8 +89,12 @@ Page {
         }
         // send toast to user that login failed
     }
+    function onMailSent(){
+        mailSentToast.show()
+    }
     onCreationCompleted: {
         // we have to wait for the signal that login was done
         app.loginDone.connect(onLoginDone)
+        app.mailSent.connect(onMailSent);
     }
 }

@@ -51,6 +51,7 @@ public:
 
 signals:
 	void loginDone(const bool& success);
+	void mailSent();
 
 private slots:
     void onSystemLanguageChanged();

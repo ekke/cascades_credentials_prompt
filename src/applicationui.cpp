@@ -65,8 +65,8 @@ void ApplicationUI::forgotPassword(const QString& email) {
 	qDebug() << "CASCADES CREDENTIALS | ApplicationUI::forgotPassword | email address: " << email;
 	// send the information to the server
 	// or send an email to admin
-	// or...
-	// perhaps SystemToast to notify user
+	// let user know that password was requested
+	emit mailSent();
 }
 
 void ApplicationUI::login(const QString& user, const QString& pw) {
